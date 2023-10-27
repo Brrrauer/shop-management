@@ -1,0 +1,25 @@
+Flujo de desarrollo:
+-Instalación de virtualenv y creación+activación de un entorno virtual 
+	python -m virtualenv venv
+	.\venv\Scripts\activate
+-Instalación de Django
+-Creación de proyecto Django (drf)
+-Creación de API
+-Creacion de modelo "Product" y registro del mismo (en admin.py)
+-Creación base de datos
+-Creación de superuser
+-Lanzamiento del servidor
+	python manage.py runserver
+-Acceso al servidor http://localhost:8000/admin/
+-Instalación Django Rest Framework (sirve para serializar objetos y poder convertirlos a JSON)
+-Creacion de urls/routers
+-Acceso a ruta "api"
+	http://localhost:8000/api/v1/
+
+-PROBLEMA: me salia error en http://localhost:8000/api/v1/products/ , me di cuenta que era porque no se había
+ejecutado bien la migración y tuve que crear a mano el archivo de migracion y ejecutarlo. Asi se arregló el error.
+
+-Pruebas de creación, modificación y eliminación de elementos
+-Instalación coreapi
+-Creación de ruta "docs" para ver la documentación de la api
+	http://localhost:8000/docs/
